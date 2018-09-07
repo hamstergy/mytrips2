@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 8]><html lang="en" class="ie7"><![endif]-->
 <!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
 <!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
@@ -13,9 +13,158 @@
     <title>Website Title</title>
     <link rel="icon" type="image/png" sizes="16x16" href="">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
-    <h1>Welcome to HTML Boilerplate</h1>
+  <body class="body">
+    <header class="header">
+      <div class="layout">
+        <div class="header__right">
+            <div class="header__right-mobile"></div>
+            <div class="header__right-content">
+              <div class="header__notice">
+                <div class="header__notice-counter">2</div>
+              </div>
+              <!-- <div class="header__user-info"> -->
+                <div class="user-info header__user-info">
+                  <img src="/images/avatar.jpg" class="user-info__image">
+                  <div class="user-info__profile"></div>
+                </div>
+              <!-- </div> -->
+            </div>
+        </div>
+        <div class="header__left">
+          <div class="header__left-content">
+            <a href="#" class="logo"><img src="/images/logo.png" class="logo__image"></a>
+            <div class="header__menu header-menu">
+              <a href="#" class="header-menu__item">Дэшбоард</a>
+              <a href="#" class="header-menu__item">Бронирование</a>
+              <a href="#" class="header-menu__item">Мои заявки</a>
+              <a href="#" class="header-menu__item">Мои поездки</a>
+              <a href="#" class="header-menu__item">Мои сотрудники</a>
+              <a href="#" class="header-menu__item">Пресс-служба</a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </header>
+
+
+    <style>
+      .demo-block {
+    background-color: #f43059;
+    color: #fff;
+    padding: 18px;
+}
+      </style>
+    <div class="grid">
+    <div class="grid__item  one-half  palm--one-whole">
+    <div class="grid">
+    <div class="grid__item">
+    <p class="demo-block">Grid 1.1</p>
+    </div><div class="grid__item  lap--one-whole  one-third">
+    <p class="demo-block">Grid 1.2</p>
+    </div><div class="grid__item  lap--one-whole  two-thirds">
+    <p class="demo-block">Grid 1.3</p>
+    </div>
+    </div>
+    </div><div class="grid__item  one-half  palm--one-whole">
+    <div class="grid">
+    <div class="grid__item  one-half">
+    <p class="demo-block">Grid 2.1</p>
+    </div><div class="grid__item  one-half">
+    <p class="demo-block">Grid 2.2</p>
+    </div><div class="grid__item  lap--one-half  desk--one-third">
+    <p class="demo-block">Grid 2.3</p>
+    </div><div class="grid__item  lap--one-half  desk--one-third">
+    <p class="demo-block">Grid 2.4</p>
+    </div><div class="grid__item  desk--one-third">
+    <p class="demo-block">Grid 2.5</p>
+    </div>
+    </div>
+    </div><div class="grid__item  one-quarter  palm--one-half  push--palm--one-quarter">
+    <p class="demo-block">Grid 3.0</p>
+    </div><div class="grid__item  three-quarters  palm--one-whole">
+    <div class="grid  grid--rev">
+    <div class="grid__item  one-half  palm--two-fifths">
+    <p class="demo-block">Grid 4.1</p>
+    </div><div class="grid__item  one-half  palm--two-fifths">
+    <p class="demo-block">Grid 4.2</p>
+    </div>
+    </div>
+    </div><div class="grid__item">
+    <div class="grid  grid--full">
+    <div class="grid__item  palm--one-half  lap--one-half  desk--one-quarter">
+    <p class="demo-block">Grid 5.1</p>
+    </div><div class="grid__item  palm--one-half  lap--one-half  desk--one-quarter">
+    <p class="demo-block">Grid 5.2</p>
+    </div><div class="grid__item  palm--three-fifths  lap--one-quarter  desk--one-quarter  push--lap--one-quarter">
+    <p class="demo-block">Grid 5.3</p>
+    </div><div class="grid__item  palm--two-fifths  lap--one-quarter  desk--one-quarter  push--lap--one-quarter">
+    <p class="demo-block">Grid 5.4</p>
+    </div>
+    </div>
+    </div><div class="grid__item">
+    <div class="grid  grid--rev  grid--full">
+    <div class="grid__item  palm--three-fifths  lap--one-quarter  desk--one-quarter">
+    <p class="demo-block">Grid 6.1</p>
+    </div><div class="grid__item  palm--two-fifths  lap--one-quarter  desk--one-quarter  push--lap--one-half">
+    <p class="demo-block">Grid 6.2</p>
+    </div><div class="grid__item  lap--one-whole  desk--one-quarter">
+    <p class="demo-block">Grid 6.3</p>
+    </div><div class="grid__item  lap--one-half  desk--one-quarter  push--lap--one-quarter">
+    <p class="demo-block">Grid 6.4</p>
+    </div>
+    </div>
+    </div><div class="grid__item">
+    <div class="grid  grid--center">
+    <div class="grid__item  one-third">
+    <p class="demo-block">Grid 7.1</p>
+    </div><div class="grid__item  one-third">
+    <p class="demo-block">Grid 7.2</p>
+    </div>
+    </div>
+    </div><div class="grid__item">
+    <div class="grid  grid--right">
+    <div class="grid__item  one-third">
+    <p class="demo-block">Grid 8.1</p>
+    </div><div class="grid__item  one-third">
+    <p class="demo-block">Grid 8.2</p>
+    </div>
+    </div>
+    </div><div class="grid__item">
+    <div class="grid">
+    <div class="grid__item  one-third">
+    <p class="demo-block">Grid 9.1</p>
+    </div><div class="grid__item  one-third">
+    <p class="demo-block">Grid 9.2</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="page">
+    <div class="content">
+    <p class="demo-block">Content</p>
+    </div><div class="sub-content">
+    <p class="demo-block">Sub-content</p>
+    </div>
+    </div>
+    <div class="footer">
+    <div class="footer__item">
+    <p class="demo-block">Footer item</p>
+    </div><div class="footer__item">
+    <p class="demo-block">Footer item</p>
+    </div><div class="footer__item">
+    <p class="demo-block">Footer item</p>
+    </div><div class="footer__item">
+    <p class="demo-block">Footer item</p>
+    </div>
+    </div>
+    <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+    <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.32d6c6b4cb1ed84df04e7f9705a90c47.html?origin=https%3A%2F%2Fcsswizardry.com&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+
     <script src="script/main.js" defer="defer"></script>
   </body>
 </html>

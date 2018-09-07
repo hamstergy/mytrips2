@@ -1,0 +1,49 @@
+.header {
+  padding: 23px 0 36px 0;
+  background-color: #ffffff;
+
+  &__right {
+    float: right;
+    padding-top: 10px;
+  }
+
+  .logo {
+    width:200px;
+    display: inline-block;
+    &__image {
+      width: 160px;
+      height: 49px;
+    }
+  }
+
+
+
+  &__notice {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: #f1363b;
+    display: inline-block;
+    vertical-align: top;
+
+    &-counter {
+      width: 8px;
+      height: 13px;
+      font-family: 'Fira Sans';
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 0.93;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 auto;
+      padding: 5px 0;
+    }
+  }
+
+  &__user-info {
+    vertical-align: top;
+    display: inline-block;
+  }
+}
+
+

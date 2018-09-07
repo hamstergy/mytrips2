@@ -1,0 +1,12 @@
+.header-menu {
+  display: inline-block;
+
+  &__item {
+    font-family: 'Fira Sans', sans-serif;;
+    font-size: 16px;
+    line-height: 1;
+    color: #4d4d4d;
+    white-space: nowrap;
+    padding-right: 1.5em;
+  }
+}
