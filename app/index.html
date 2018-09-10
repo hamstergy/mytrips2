@@ -18,32 +18,35 @@
   <body class="body">
     <header class="header">
       <div class="layout">
+        <div class="header__left">
+          <div class="header__left-content" id="v-menu">
+            <a href="#" class="logo"><img src="/images/logo.png" class="logo__image"></a>
+
+              <ul class="header__menu header-menu" >
+                  <li class="header-menu__item" v-for='(menu,key) in menu' v-if="menu.active"><a href="#" class="header-menu__link">{{ menu.name }}</a></li>
+                  <li class="header-menu__item header-dropdown" v-on:click="showDropdown = !showDropdown">Еще</li>
+                  <ul class="dropdown-content" v-show="showDropdown">
+                      <li class="header-menu__item header-menu__item--vertical " v-for='(menu,key) in menu' v-if="!menu.active">{{ menu.name }}</li>
+                  </ul>
+              </ul>
+
+
+        </div>
+        </div>
         <div class="header__right">
             <div class="header__right-mobile"></div>
             <div class="header__right-content">
-              <div class="header__notice">
+              <div class="header__notice h-notice">
                 <div class="header__notice-counter">2</div>
               </div>
-              <!-- <div class="header__user-info"> -->
                 <div class="user-info header__user-info">
                   <img src="/images/avatar.jpg" class="user-info__image">
-                  <div class="user-info__profile"></div>
+                  <div class="user-info__profile">
+                    <span class="user-info__name">Руслан Баталгазиев</span>
+                    <span class="user-info__company">ТОО «Сакенов»</span>
+                  </div>
                 </div>
-              <!-- </div> -->
             </div>
-        </div>
-        <div class="header__left">
-          <div class="header__left-content">
-            <a href="#" class="logo"><img src="/images/logo.png" class="logo__image"></a>
-            <div class="header__menu header-menu">
-              <a href="#" class="header-menu__item">Дэшбоард</a>
-              <a href="#" class="header-menu__item">Бронирование</a>
-              <a href="#" class="header-menu__item">Мои заявки</a>
-              <a href="#" class="header-menu__item">Мои поездки</a>
-              <a href="#" class="header-menu__item">Мои сотрудники</a>
-              <a href="#" class="header-menu__item">Пресс-служба</a>
-            </div>
-        </div>
         </div>
       </div>
     </header>
@@ -149,22 +152,52 @@
     <p class="demo-block">Sub-content</p>
     </div>
     </div>
+
     <div class="footer">
-    <div class="footer__item">
-    <p class="demo-block">Footer item</p>
-    </div><div class="footer__item">
-    <p class="demo-block">Footer item</p>
-    </div><div class="footer__item">
-    <p class="demo-block">Footer item</p>
-    </div><div class="footer__item">
-    <p class="demo-block">Footer item</p>
+      <p class="footer__text">© 2015-2016. Все права защищены.<br>Professional Travel Service.</p>
     </div>
-    </div>
-    <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-    <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.32d6c6b4cb1ed84df04e7f9705a90c47.html?origin=https%3A%2F%2Fcsswizardry.com&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
-
+    <script src="/script/src/vue.js"></script>
     <script src="script/main.js" defer="defer"></script>
+    <script>
+      var app = new Vue({
+        el: '#v-menu',
+        data: {
+          showDropdown: false,
+          counter:0,
+          menu: [
+            {
+              name: 'Дэшбоард',
+              link: '#',
+              active: 0
+            },
+            {
+              name: 'Бронирование',
+              link: '#',
+              active: 0
+            },
+            {
+              name: 'Мои заявки',
+              link: '#',
+              active: 0
+            },
+            {
+              name: 'Мои поездки',
+              link: '#',
+              active: 0
+            },
+            {
+              name: 'Мои сотрудники',
+              link: '#',
+              active: 0
+            },
+            {
+              name: 'Пресс-служба',
+              link: '#',
+              active: 0
+            }
+          ]
+        }
+      })
+    </script>
   </body>
 </html>

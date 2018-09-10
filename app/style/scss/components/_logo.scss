@@ -1,0 +1,15 @@
+.logo {
+  float:left;
+  width:140px;
+  display: inline-block;
+  &__image {
+    width: 130px;
+  }
+  @media (min-width: 680px) {
+    width:200px;
+    &__image {
+      width: 160px;
+      height: 49px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.user-info {
+
+  &__image {
+    display: inline-block;
+    float: left;
+    padding: 0 8px 0 14px;
+  }
+  &__name {
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+    color: #4d4d4d;
+  }
+  &__company {
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    text-align: right;
+    color: #b3b3b3;
+  }
+  &__profile {
+
+    display: none;
+    widows: 70px;
+    @media (min-width: 680px) {
+         display: block;
+         width:250px;
+      }
+  }
+
+}

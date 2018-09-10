@@ -1,4 +1,10 @@
 .layout {
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 15px;
+  max-width: 1350px;
+  position: relative;
+  @media (min-width: 680px) {
+    padding: 0 25px;
+  }
+
 }

@@ -1,0 +1,12 @@
+.footer {
+  padding: 20px 0 10px 0;
+  background-color: #ffffff;
+
+  &__text {
+    opacity: 0.8;
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: center;
+    color: #4d4d4d;
+  }
+}

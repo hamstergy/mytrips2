@@ -1,22 +1,31 @@
 .header {
   padding: 23px 0 36px 0;
   background-color: #ffffff;
+  height: 50px;
+
 
   &__right {
     float: right;
     padding-top: 10px;
   }
 
-  .logo {
-    width:200px;
-    display: inline-block;
-    &__image {
-      width: 160px;
-      height: 49px;
+  &__right-content {
+
+    width: 100px;
+    @media (min-width: 680px) {
+         width:300px;
     }
   }
+  &__left {
+    float: left;
+    display:block;
+  }
 
+  &__left-content {
 
+    @media (min-width: 680px) {
+    }
+  }
 
   &__notice {
     width: 24px;
@@ -45,5 +54,4 @@
     display: inline-block;
   }
 }
-
 
