@@ -6,5 +6,10 @@
   @media (min-width: 680px) {
     padding: 0 25px;
   }
-
+  &__page {
+    padding: 15px 15px;
+    @media (min-width: 680px) {
+      padding: 30px 25px;
+    }
+  }
 }
