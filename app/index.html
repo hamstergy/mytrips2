@@ -22,7 +22,7 @@
           <div class="header__left-content" >
             <a href="#" class="logo"><img src="/images/logo.png" class="logo__image"></a>
 
-              <ul class="header__menu header-menu" v-if="windowWidth > 736">
+              <ul ref="header__menu" class="header__menu header-menu" v-if="windowWidth > 736">
                   <li class="header-menu__item" v-for='(menu,key) in menu' v-if="menu.window < windowWidth"><a href="#" class="header-menu__link">{{ menu.name }}</a></li>
                   <div class="header-menu__item"><a class="header-menu__link" v-on:click="showDropdown = !showDropdown">Еще</a>
                     <ul class="header-menu__dropdown-content" v-show="showDropdown">
@@ -49,102 +49,43 @@
         </div>
       </div>
     </header>
-    <style>
-      .demo-block {
-        background-color: #f43059;
-        color: #fff;
-        padding: 18px;
-      }
-    </style>
 
     <div class="layout layout__page">
-      <div class="page">
-        <div class="grid">
-        <div class="grid__item  one-half  palm--one-whole">
-        <div class="grid">
-        <div class="grid__item">
-        <p class="demo-block">Grid 1.1</p>
-        </div><div class="grid__item  lap--one-whole  one-third">
-        <p class="demo-block">Grid 1.2</p>
-        </div><div class="grid__item  lap--one-whole  two-thirds">
-        <p class="demo-block">Grid 1.3</p>
-        </div>
-        </div>
-        </div><div class="grid__item  one-half  palm--one-whole">
-        <div class="grid">
-        <div class="grid__item  one-half">
-        <p class="demo-block">Grid 2.1</p>
-        </div><div class="grid__item  one-half">
-        <p class="demo-block">Grid 2.2</p>
-        </div><div class="grid__item  lap--one-half  desk--one-third">
-        <p class="demo-block">Grid 2.3</p>
-        </div><div class="grid__item  lap--one-half  desk--one-third">
-        <p class="demo-block">Grid 2.4</p>
-        </div><div class="grid__item  desk--one-third">
-        <p class="demo-block">Grid 2.5</p>
-        </div>
-        </div>
-        </div><div class="grid__item  one-quarter  palm--one-half  push--palm--one-quarter">
-        <p class="demo-block">Grid 3.0</p>
-        </div><div class="grid__item  three-quarters  palm--one-whole">
-        <div class="grid  grid--rev">
-        <div class="grid__item  one-half  palm--two-fifths">
-        <p class="demo-block">Grid 4.1</p>
-        </div><div class="grid__item  one-half  palm--two-fifths">
-        <p class="demo-block">Grid 4.2</p>
-        </div>
-        </div>
-        </div><div class="grid__item">
-        <div class="grid  grid--full">
-        <div class="grid__item  palm--one-half  lap--one-half  desk--one-quarter">
-        <p class="demo-block">Grid 5.1</p>
-        </div><div class="grid__item  palm--one-half  lap--one-half  desk--one-quarter">
-        <p class="demo-block">Grid 5.2</p>
-        </div><div class="grid__item  palm--three-fifths  lap--one-quarter  desk--one-quarter  push--lap--one-quarter">
-        <p class="demo-block">Grid 5.3</p>
-        </div><div class="grid__item  palm--two-fifths  lap--one-quarter  desk--one-quarter  push--lap--one-quarter">
-        <p class="demo-block">Grid 5.4</p>
-        </div>
-        </div>
-        </div><div class="grid__item">
-        <div class="grid  grid--rev  grid--full">
-        <div class="grid__item  palm--three-fifths  lap--one-quarter  desk--one-quarter">
-        <p class="demo-block">Grid 6.1</p>
-        </div><div class="grid__item  palm--two-fifths  lap--one-quarter  desk--one-quarter  push--lap--one-half">
-        <p class="demo-block">Grid 6.2</p>
-        </div><div class="grid__item  lap--one-whole  desk--one-quarter">
-        <p class="demo-block">Grid 6.3</p>
-        </div><div class="grid__item  lap--one-half  desk--one-quarter  push--lap--one-quarter">
-        <p class="demo-block">Grid 6.4</p>
-        </div>
-        </div>
-        </div><div class="grid__item">
-        <div class="grid  grid--center">
-        <div class="grid__item  one-third">
-        <p class="demo-block">Grid 7.1</p>
-        </div><div class="grid__item  one-third">
-        <p class="demo-block">Grid 7.2</p>
-        </div>
-        </div>
-        </div><div class="grid__item">
-        <div class="grid  grid--right">
-        <div class="grid__item  one-third">
-        <p class="demo-block">Grid 8.1</p>
-        </div><div class="grid__item  one-third">
-        <p class="demo-block">Grid 8.2</p>
-        </div>
-        </div>
-        </div><div class="grid__item">
-        <div class="grid">
-        <div class="grid__item  one-third">
-        <p class="demo-block">Grid 9.1</p>
-        </div><div class="grid__item  one-third">
-        <p class="demo-block">Grid 9.2</p>
-        </div>
-        </div>
-        </div>
-        </div>
+      <div class="page my-trips">
+        <h1 class="page__title">Мои поездки</h1>
+          <div class="my-trips__counter">
+            <div class="my-trips__counter counter-item">
+              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
+              <span class="counter__day counter__day--bold">350 шт.</span><br>
+              <span class="counter__month counter__month--bold">8 920 шт.</span><br>
+            </div>
 
+
+            <div class="my-trips__counter counter-item">
+              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
+              <span class="counter__day counter__day--green">350 шт.</span><br>
+              <span class="counter__month">8 920 шт.</span><br>
+            </div>
+
+            <div class="my-trips__counter counter-item">
+              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
+              <span class="counter__day counter__day--blue">350 шт.</span><br>
+              <span class="counter__month">8 920 шт.</span><br>
+            </div>
+
+            <div class="my-trips__counter counter-item">
+              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
+              <span class="counter__day counter__day--orange">350 шт.</span><br>
+              <span class="counter__month">8 920 шт.</span><br>
+            </div>
+
+            <div class="my-trips__counter counter-item">
+              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
+              <span class="counter__day counter__day--red">350 шт.</span><br>
+              <span class="counter__month">8 920 шт.</span><br>
+            </div>
+          </div>
+        </div>
         <div class="page">
         <div class="content">
         <p class="demo-block">Content</p>
@@ -164,65 +105,57 @@
         el: '#v-menu',
         data: {
           userPosition: 'header__right',
-          windowWidth: 1600,
+          windowWidth: 0,
           showDropdown: false,
           counter:0,
           menu: [
             {
               name: 'Дэшбоард',
               link: '#',
-              active: 0,
               window: 720
             },
             {
               name: 'Бронирование',
               link: '#',
-              active: 0,
               window: 850
             },
             {
               name: 'Мои заявки',
               link: '#',
-              active: 0,
               window: 970
             },
             {
               name: 'Мои поездки',
               link: '#',
-              active: 0,
               window: 1100
             },
             {
               name: 'Мои сотрудники',
               link: '#',
-              active: 0,
               window: 1250
             },
             {
               name: 'Пресс-служба',
               link: '#',
-              active: 0,
               window: 1350
             }
           ]
         },
-        watch: {
-          windowWidth(newWidth, oldWidth) {
-          this.txt = `it changed to ${newWidth} from ${oldWidth}`;
-          }
-        },
-        methods: {
-          show: function (){
-            return this.windowWidth > this.menu.window
-          }
-        },
         mounted() {
-          this.$nextTick(() => {
-            window.addEventListener('resize', () => {
-              this.windowWidth = window.innerWidth
-            });
+          this.$nextTick(function() {
+              window.addEventListener('resize', this.getWindowWidth);
+              this.getWindowWidth()
           })
         },
+
+        beforeDestroy() {
+          window.removeEventListener('resize', this.getWindowWidth);
+        },
+        methods: {
+          getWindowWidth(event) {
+            this.windowWidth = document.documentElement.clientWidth;
+          }
+        }
       })
     </script>
   </body>

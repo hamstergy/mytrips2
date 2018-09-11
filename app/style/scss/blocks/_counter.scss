@@ -1,0 +1,59 @@
+.counter {
+  &-item {
+    float:left;
+    padding:0 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:first-child {
+      padding:0 20px 0 0;
+    }
+    &:last-child {
+      border-right: 0px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__desc {
+    font-size: 12px;
+    color: #b3b3b3;
+  }
+  &__day {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: -0.3px;
+    color: #4d4d4d;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--green {
+      background-color: #d1ff8c;
+    }
+
+    &--blue {
+      background-color: #eaedfa;
+    }
+
+    &--orange {
+      background-color: #fedc94;
+    }
+
+    &--red {
+      background-color: #f35a5e;
+      color: #fff;
+    }
+  }
+
+  &__month {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: #b3b3b3;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}

@@ -233,7 +233,7 @@
       * 5. Required to combine fluid widths and fixed gutters.
       */
      #{$class-type}grid__item {
-         display:inline-block;           /* [1] */
+         float:left;           /* [1] */
          padding-left:$gutter;           /* [2] */
          vertical-align:top;             /* [3] */
          @if $mobile-first {

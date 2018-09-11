@@ -1,3 +1,13 @@
 .page {
   background: #fff;
+  padding: 25px 20px;
+
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.36;
+    color: #4d4d4d;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+  }
 }
