@@ -13,6 +13,7 @@
     <title>Website Title</title>
     <link rel="icon" type="image/png" sizes="16x16" href="">
     <link rel="stylesheet" href="style/style.css">
+    <script src="/script/src/svg4everybody.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body class="body">
@@ -85,15 +86,90 @@
               <span class="counter__month">8 920 шт.</span><br>
             </div>
           </div>
-        </div>
-        <div class="page">
-        <div class="content">
-        <p class="demo-block">Content</p>
-        </div><div class="sub-content">
-        <p class="demo-block">Sub-content</p>
-        </div>
+          <div class="my-trips__table">
+          <table class="table">
+            <tr class="table__row table__row--header">
+                <th class="table__cell table__cell--header"></th>
+                <th class="table__cell table__cell--header">№ заявки</th>
+                <th class="table__cell table__cell--header">Дата заявки</th>
+                <th class="table__cell table__cell--header">Пассажир</th>
+                <th class="table__cell table__cell--header">Дата и маршрут</th>
+                <th class="table__cell table__cell--header">Бронь и билет</th>
+                <th class="table__cell table__cell--header">Сумма и оплата</th>
+                <th class="table__cell table__cell--header">Статус</th>
+                <th class="table__cell table__cell--header"></th>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell" data-th="">
+                    <div class="circle circle--active"></div>
+                </td>
+                <td class="table__cell" data-th="№ заявки:"><a href="#" class="text text--weight-medium text--color-blue">№1397</a><br><span
+                        class="text text--size-small text--color-grey">Air BSP</span></td>
+                <td class="table__cell" data-th="Дата заявки:"><span class="text">30.03.18<br>11:34</span></td>
+                <td class="table__cell" data-th="Пассажир:"><a href="#" class="text text--underline text--color-blue">Коробейников
+                            Сергей</a></td>
+                <td class="table__cell" data-th="Дата и маршрут:"><a class="text text--underline text--color-blue" href="#">Алматы</a><br>
+                    <div style="width:120px">
+                        <div style="float:left;"><span class="text text--weight-bold">06.07.18</span><br><span class="text text--color-grey-light">19:55</span></div>
+                        <div style="float:left;"><span class="text text--weight-bold">&nbsp;-&nbsp;</span></div>
+                        <div style="float:left;"><span class="text text--weight-bold">07.07.18</span><br><span class="text text--color-grey-light">05:45</span></div>
+                    </div>
+                </td>
+                <td class="table__cell" data-th="Бронь и билет:"><span class="text text--weight-medium">Air Astana</span><br><span
+                        class="text">27735908<br>72231101875143</span></td>
+                <td class="table__cell" data-th="Сумма и оплата:"><span class="text text--weight-medium text--bgcolor-yellow text--size-small">115
+                        300 <span class="text text__tenge">₸</span></span><br><span class="text text--color-grey-light text--size-small">Ожидает
+                        оплаты
+                    </span></td>
+                <td class="table__cell" data-th="Статус:"><span class="text text__button--green">ОФОРМЛЕН</span><br><span
+                        class="text text--size-small">Айтуаров А. А.</span></td>
+                <td class="table__cell">
+                    <div class="icon icon--border"><svg class="svg-icon"><use xlink:href='/images/sprite.svg#icon-table-copy'></use></svg></div>
+                    <div class="icon icon--border"><svg class="svg-icon"><use xlink:href='/images/sprite.svg#icon-table-copy'></use></svg></div>
+                    <div class="icon icon--border"><svg class="svg-icon"><use xlink:href='/images/sprite.svg#icon-mail'></use></svg></div>
+                    <div class="icon"><svg class="icon-more-table" style="height:4px; width:18px;"><use xlink:href='/images/sprite.svg#icon-more-table'></use></svg></div>
+                </td>
+
+            </tr>
+
+            <tr class="table__row">
+                <td class="table__cell" data-th="">
+                    <div class="circle"></div>
+                </td>
+                <td class="table__cell" data-th="№ заявки:"><a href="#" class="text text--weight-medium text--color-blue">№1397</a><br><span
+                        class="text text--size-small text--color-grey">offline, Air BSP</span></td>
+                <td class="table__cell" data-th="Дата заявки:"><span class="text">30.03.18<br>11:34</span></td>
+                <td class="table__cell" data-th="Пассажир:"><a href="#" class="text text--underline text--color-blue">Коробейников
+                            Сергей</a></td>
+                <td class="table__cell" data-th="Дата и маршрут:">
+                    <div class="text"><a class="text text--underline text--color-red" href="#">Петропавловск</a></div>
+                    <div><span class="text text__button--red">ЗАДЕРЖАН РЕЙС</span><br>
+                        <div style="width:120px">
+                            <div style="float:left;"><span class="text text--weight-bold">06.07.18</span><br><span class="text text--color-grey-light">19:55</span></div>
+                            <div style="float:left;"><span class="text text--weight-bold">&nbsp;-&nbsp;</span></div>
+                            <div style="float:left;"><span class="text text--weight-bold">07.07.18</span><br><span class="text text--color-grey-light">05:45</span></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="table__cell" data-th="Бронь и билет:"><span class="text text--weight-medium">Air Astana</span><br><span
+                        class="text">27735908<br>72231101875143</span></td>
+                <td class="table__cell" data-th="Сумма и оплата:"><span class="text text--weight-medium text--bgcolor-yellow text--size-small">115
+                        300 <span class="text text__tenge">₸</span></span><br><span class="text text--light-two text--size-small">Ожидает
+                        оплаты
+                    </span></td>
+                <td class="table__cell" data-th="Статус:"><span class="text text__button--green">ОФОРМЛЕН</span><br><span
+                        class="text text__size--small">Айтуаров А. А.</span></td>
+                <td class="table__cell">
+                    <div class="icon icon--border"><svg class="svg-icon"><use xlink:href='/images/sprite.svg#icon-table-copy'></use></svg></div>
+                    <div class="icon icon--border"><svg class="svg-icon"><use xlink:href='/images/sprite.svg#icon-table-copy'></use></svg></div>
+                    <div class="icon icon--border"><svg class="svg-icon"><use xlink:href='/images/sprite.svg#icon-mail'></use></svg></div>
+                    <div class="icon"><svg class="icon-more-table" style="height:4px; width:18px;"><use xlink:href='/images/sprite.svg#icon-more-table'></use></svg></div>
+                </td>
+            </tr>
+        </table>
         </div>
       </div>
+    </div>
     </div>
     <div class="footer">
       <p class="footer__text">© 2015-2016. Все права защищены.<br>Professional Travel Service.</p>

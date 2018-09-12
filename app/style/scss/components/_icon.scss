@@ -1,0 +1,25 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background-color: #ffffff;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  color: #395BD3;
+
+  &--border {
+    border-radius: 5px;
+    border: solid 1px #e1e5e6;
+  }
+
+  &--simple svg {
+    max-width: 18px;
+    max-height: 18px;
+  }
+}
+.svg-icon{
+  max-width: 18px;
+  max-height: 18px;
+}
+

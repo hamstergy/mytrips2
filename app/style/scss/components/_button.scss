@@ -1,20 +1,29 @@
-.button-style {
-  border-radius: 3px;
-  padding: 7px 16px 8px;
-  display: inline-block;
-  background: #fff;
-  text-decoration: none;
-  vertical-align: top;
-  cursor: pointer;
-  color: #666;
-  border: none;
-  outline: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  font-size: 14px;
-  @include transition(0.3s);
+.circle {
+  width: 14px;
+  height: 14px;
+  background: #d5d7de;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
 }
-
-.button {
-  @extend .button-style;
+.circle--active {
+  background: #466dff;
+}
+.button__icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background-color: #ffffff;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+  color: #395BD3;
+}
+.button__icon--simple svg {
+  max-width: 18px;
+  max-height: 18px;
+}
+.button__icon--border {
+  border-radius: 5px;
+  border: solid 1px #e1e5e6;
 }
