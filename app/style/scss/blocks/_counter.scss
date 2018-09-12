@@ -1,11 +1,21 @@
+$breakpoint-alpha: 480px;
+$breakpoint-beta: 991px;
+
 .counter {
   &-item {
     float:left;
     padding:0 20px;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 0px solid rgba(0, 0, 0, 0.1);
+
+    @media (min-width: $breakpoint-beta) {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
 
     &:first-child {
-      padding:0 20px 0 0;
+      padding:0 20px;
+      @media (min-width: $breakpoint-beta) {
+        padding:0 20px 0 0;
+      }
     }
     &:last-child {
       border-right: 0px solid rgba(0, 0, 0, 0.1);
@@ -22,6 +32,7 @@
     line-height: 1.67;
     letter-spacing: -0.3px;
     color: #4d4d4d;
+    padding: 3px;
 
     &--bold {
       font-weight: bold;

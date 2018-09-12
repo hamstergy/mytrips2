@@ -1,0 +1,17 @@
+.route {
+  font-weight: bold;
+  line-height: 1.71;
+  &__date {
+    float:left;
+
+    &-time {
+      font-weight: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      @include text-color(grey-light);
+    }
+  }
+  &__separate {
+    float:left;
+  }
+}

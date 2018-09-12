@@ -1,0 +1,14 @@
+@mixin text-color($color) {
+  @if $color == blue {
+    color: #3052d0;
+  } @else if $color == red {
+    color: #f35a5e;
+  } @else if $color == orange {
+    color: #fedc94;
+  } @else if $color == grey {
+    color: #666666;
+  }
+  @else if $color == grey-light {
+    color: #b3b3b3;
+  }
+}

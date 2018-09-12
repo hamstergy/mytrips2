@@ -25,7 +25,7 @@
 
               <ul ref="header__menu" class="header__menu header-menu" v-if="windowWidth > 736">
                   <li class="header-menu__item" v-for='(menu,key) in menu' v-if="menu.window < windowWidth"><a href="#" class="header-menu__link">{{ menu.name }}</a></li>
-                  <div class="header-menu__item"><a class="header-menu__link" v-on:click="showDropdown = !showDropdown">Еще</a>
+                  <div class="header-menu__item"><a class="header-menu__link" v-if="1350 > windowWidth" v-on:click="showDropdown = !showDropdown">Еще</a>
                     <ul class="header-menu__dropdown-content" v-show="showDropdown">
                         <li class="header-menu__item header-menu__item--vertical" v-for='(menu,key) in menu' v-if="menu.window > windowWidth">{{ menu.name }}</li>
                     </ul>
@@ -52,7 +52,8 @@
     </header>
 
     <div class="layout layout__page">
-      <div class="page my-trips">
+      <div class="page">
+      <div class="page__block my-trips">
         <h1 class="page__title">Мои поездки</h1>
           <div class="my-trips__counter">
             <div class="my-trips__counter counter-item">
@@ -86,8 +87,10 @@
               <span class="counter__month">8 920 шт.</span><br>
             </div>
           </div>
-          <div class="my-trips__table">
-          <table class="table">
+      </div>
+
+      <div class="my-trips__table page__block--full">
+          <table class="table my-trips">
             <tr class="table__row table__row--header">
                 <th class="table__cell table__cell--header"></th>
                 <th class="table__cell table__cell--header">№ заявки</th>
@@ -103,17 +106,16 @@
                 <td class="table__cell" data-th="">
                     <div class="circle circle--active"></div>
                 </td>
-                <td class="table__cell" data-th="№ заявки:"><a href="#" class="text text--weight-medium text--color-blue">№1397</a><br><span
-                        class="text text--size-small text--color-grey">Air BSP</span></td>
-                <td class="table__cell" data-th="Дата заявки:"><span class="text">30.03.18<br>11:34</span></td>
-                <td class="table__cell" data-th="Пассажир:"><a href="#" class="text text--underline text--color-blue">Коробейников
-                            Сергей</a></td>
-                <td class="table__cell" data-th="Дата и маршрут:"><a class="text text--underline text--color-blue" href="#">Алматы</a><br>
-                    <div style="width:120px">
-                        <div style="float:left;"><span class="text text--weight-bold">06.07.18</span><br><span class="text text--color-grey-light">19:55</span></div>
-                        <div style="float:left;"><span class="text text--weight-bold">&nbsp;-&nbsp;</span></div>
-                        <div style="float:left;"><span class="text text--weight-bold">07.07.18</span><br><span class="text text--color-grey-light">05:45</span></div>
-                    </div>
+                <td class="table__cell" data-th="№ заявки:"><a href="#" class="my-trips__app-number">№1397</a><br><span
+                        class="my-trips__app-company">Air BSP</span></td>
+                <td class="table__cell" data-th="Дата заявки:"><span class="my-trips__date_app">30.03.18<br>11:34</span></td>
+                <td class="table__cell" data-th="Пассажир:"><a href="#" class="my-trips__passenger">Коробейников Сергей</a></td>
+                <td class="table__cell" data-th="Дата и маршрут:"><a class="my-trips__route-city" href="#">Алматы</a><br>
+                  <div class="my-trips__route-date route">
+                      <div class="route__date"><span>06.07.18</span><br><span class="route__date-time">19:55</span></div>
+                      <div class="route__separate"><span>&nbsp;-&nbsp;</span></div>
+                      <div class="route__date"><span>07.07.18</span><br><span class="route__date-time">05:45</span></div>
+                  </div>
                 </td>
                 <td class="table__cell" data-th="Бронь и билет:"><span class="text text--weight-medium">Air Astana</span><br><span
                         class="text">27735908<br>72231101875143</span></td>
@@ -138,8 +140,8 @@
                 </td>
                 <td class="table__cell" data-th="№ заявки:"><a href="#" class="text text--weight-medium text--color-blue">№1397</a><br><span
                         class="text text--size-small text--color-grey">offline, Air BSP</span></td>
-                <td class="table__cell" data-th="Дата заявки:"><span class="text">30.03.18<br>11:34</span></td>
-                <td class="table__cell" data-th="Пассажир:"><a href="#" class="text text--underline text--color-blue">Коробейников
+                <td class="table__cell" data-th="Дата заявки:"><span class="my-trips__date_request">30.03.18<br>11:34</span></td>
+                <td class="table__cell" data-th="Пассажир:"><a href="#" class="my-trips__passenger">Коробейников
                             Сергей</a></td>
                 <td class="table__cell" data-th="Дата и маршрут:">
                     <div class="text"><a class="text text--underline text--color-red" href="#">Петропавловск</a></div>

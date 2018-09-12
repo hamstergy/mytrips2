@@ -9,27 +9,28 @@ $breakpoint-beta: 1080px;
   width: 100%;
   min-width: 300px;
 
-  .table__row {
+  &__row {
     border-top: 0px solid #ddd;
     border-bottom: 0px solid #ddd;
-  }
-  .table__row--header {
-    background-color: #f5f7fa;
-    height: 45px;
-  }
-  .table__row:after {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 4em;
-    right: 4em;
-    margin: 0;
-    border-bottom: 1px solid #f5f7fa;
+    &--header {
+      background-color: #f5f7fa;
+      height: 45px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 4em;
+      right: 4em;
+      margin: 0;
+      border-bottom: 1px solid #f5f7fa;
+    }
   }
 
-  .table__cell {
+  &__cell {
     display: block;
     font-weight: normal;
+    padding: 0px 20px;
 
     &:first-child {
       padding-top: 0.5em;
@@ -50,12 +51,11 @@ $breakpoint-beta: 1080px;
         display: none;
       }
     }
-  }
-
-  .table__cell--header {
-    display: none;
-    font-size: 13px;
-    font-weight: bold;
+    &--header {
+      display: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
   }
 
   .table__cell,
@@ -67,7 +67,7 @@ $breakpoint-beta: 1080px;
       padding: 0.25em 0.5em;
 
       &:first-child {
-        padding-left: 0;
+        padding-left: 10px;
       }
 
       &:last-child {

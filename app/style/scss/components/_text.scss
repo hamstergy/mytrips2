@@ -20,6 +20,7 @@
     }
   }
   &--color {
+    white-space: nowrap;
     &-blue {
       color: #3052d0 !important;
     }
@@ -39,6 +40,7 @@
     text-decoration-color: rgba(48, 82, 208, 0.2);
   }
   &--bgcolor {
+    white-space: nowrap;
     &-yellow {
       background-color: #fedc94;
       padding: 4px;

@@ -1,6 +1,42 @@
 .my-trips {
+  font-size: 14px;
+
   &__counter {
     padding: 25px 0;
     overflow: auto;
   }
+
+  &__app {
+    &-number {
+      font-weight: 500;
+      line-height: 1.43;
+      @include underline;
+      @include text-color(blue);
+    }
+    &-company {
+      font-size: 13px;
+      line-height: 1.54;
+      @include text-color(grey);
+    }
+  }
+
+  &__date_app {
+    @include text-color(grey);
+    line-height: 1.14;
+  }
+
+  &__passenger {
+    line-height: 1.43;
+    color: #3052d0;
+    @include underline;
+  }
+
+  &__route {
+    &-city {
+      @include text-color(blue);
+      @include underline;
+    }
+
+  }
+
 }
