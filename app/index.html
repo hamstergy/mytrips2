@@ -52,42 +52,95 @@
     </header>
 
     <div class="layout layout__page">
-      <div class="page">
-      <div class="page__block my-trips">
+      <div class="page my-trips">
+      <div class="page__block">
         <h1 class="page__title">Мои поездки</h1>
           <div class="my-trips__counter">
-            <div class="my-trips__counter counter-item">
+            <div class="counter-item">
               <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
               <span class="counter__day counter__day--bold">350 шт.</span><br>
               <span class="counter__month counter__month--bold">8 920 шт.</span><br>
             </div>
 
 
-            <div class="my-trips__counter counter-item">
-              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
-              <span class="counter__day counter__day--green">350 шт.</span><br>
-              <span class="counter__month">8 920 шт.</span><br>
+            <div class="counter-item">
+              <span class="counter__desc">Оформленные сут./мес.</span><br>
+              <span class="counter__day counter__day--green">120 шт.</span><br>
+              <span class="counter__month">3 200 шт.</span><br>
             </div>
 
-            <div class="my-trips__counter counter-item">
-              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
-              <span class="counter__day counter__day--blue">350 шт.</span><br>
-              <span class="counter__month">8 920 шт.</span><br>
+            <div class="counter-item">
+              <span class="counter__desc">Выставленные сут./мес.</span><br>
+              <span class="counter__day counter__day--blue">1 шт.</span><br>
+              <span class="counter__month">3 шт.</span><br>
             </div>
 
-            <div class="my-trips__counter counter-item">
-              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
-              <span class="counter__day counter__day--orange">350 шт.</span><br>
-              <span class="counter__month">8 920 шт.</span><br>
+            <div class="counter-item">
+              <span class="counter__desc">Ожидают оплаты сут./мес.</span><br>
+              <span class="counter__day counter__day--orange">60 шт.</span><br>
+              <span class="counter__month">88 шт.</span><br>
             </div>
 
-            <div class="my-trips__counter counter-item">
-              <span class="counter__desc">Кол-во заявок сут./мес.</span><br>
-              <span class="counter__day counter__day--red">350 шт.</span><br>
-              <span class="counter__month">8 920 шт.</span><br>
+            <div class="counter-item">
+              <span class="counter__desc">Задержанные сут./мес.</span><br>
+              <span class="counter__day counter__day--red">1 шт.</span><br>
+              <span class="counter__month">3 шт.</span><br>
             </div>
           </div>
       </div>
+
+      <div class="page__block">
+        <div class="grid">
+          <div class="grid__item palm--one-whole lap--two-thirds ten-twelfths ">
+          <div class="my-trips__search search">
+              <select class="search search__dropdown">
+                  <option value="0">Искать везде</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+              </select>
+                <form action="" method="get">
+                  <input type="text" class="search__field" name="search_text" id="search_text" placeholder="№ Заявки/Service desk №/Employee/Ticket №/PNR/Client"/>
+                  <input type="button" name="search__button" class="button__search" value="Найти">
+                </form>
+          </div>
+          </div>
+          <div class="grid__item palm--one-whole lap--one-third two-twelfths">
+            <div class="my-trips__download">
+              <button type="submit" name="download__button" class="button__download" ><svg class="svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/sprite.svg#icon-excel"></use></svg> <span>Экспорт в Excel</span></button>
+            </div>
+          </div>
+          </div>
+      </div>
+
+      <div class="page__block">
+
+              <div class="my-trips__filter filter">
+                  <select class="filter__item">
+                      <option value="0">Все площадки</option>
+                      <option value="1">Audi</option>
+                      <option value="2">BMW</option>
+                  </select>
+                  <select class="filter__item">
+                      <option value="0">Все продукты</option>
+                      <option value="1">Audi</option>
+                      <option value="2">BMW</option>
+                  </select>
+                  <select class="filter__item">
+                      <option value="0">Все статусы</option>
+                      <option value="1">Audi</option>
+                      <option value="2">BMW</option>
+                  </select>
+                  <select class="filter__item">
+                      <option value="0">Все агенты</option>
+                      <option value="1">Audi</option>
+                      <option value="2">BMW</option>
+                  </select>
+                      <a class="filter__item filter__item--date filter__item--dropdown" href="#">Диапозон дат: не выбран</a>
+
+                      <a class="filter__item filter__item--dropdown filter__item--reset" href="#">Сбросить все</a>
+          </div>
+        </div>
+
 
       <div class="my-trips__table page__block--full">
           <table class="table my-trips">

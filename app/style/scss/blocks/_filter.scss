@@ -1,0 +1,56 @@
+.filter {
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+
+  &__item {
+    width: 100%;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #fafafc;
+    border: solid 1px #e3e3e3;
+    float: left;
+    margin: 5px 5px 0 0;
+    line-height: 1.14;
+    color: #666666;
+    text-decoration: none;
+
+    &--dropdown{
+      font-size: 14px;
+      line-height: 2.5;
+      text-decoration: none;
+      vertical-align: middle;
+      display: table-cell;
+      text-indent: 5px;
+      white-space: nowrap;
+    }
+
+    @media (min-width: $breakpoint-alpha) {
+      width: 170px;
+    }
+    @media (min-width: $breakpoint-beta) {
+      width: 180px;
+    }
+
+    &--date {
+      @media (min-width: $breakpoint-alpha) {
+        width: 220px;
+      }
+      @media (min-width: $breakpoint-beta) {
+        width: 220px;
+      }
+    }
+
+    &--reset {
+      float:right;
+      width: 110px;
+      height: 38px;
+      @media (min-width: $breakpoint-alpha) {
+        width: 110px;
+      }
+      @media (min-width: $breakpoint-beta) {
+        width: 110px;
+      }
+    }
+  }
+}

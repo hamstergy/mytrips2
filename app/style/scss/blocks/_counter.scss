@@ -2,17 +2,19 @@ $breakpoint-alpha: 480px;
 $breakpoint-beta: 991px;
 
 .counter {
+
   &-item {
     float:left;
-    padding:0 20px;
+    padding: 0px 5px 15px;
     border-right: 0px solid rgba(0, 0, 0, 0.1);
 
     @media (min-width: $breakpoint-beta) {
+      padding: 0px 20px 0px;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     &:first-child {
-      padding:0 20px;
+      padding: 0px 5px 15px;
       @media (min-width: $breakpoint-beta) {
         padding:0 20px 0 0;
       }

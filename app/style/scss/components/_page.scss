@@ -11,7 +11,8 @@
     -webkit-margin-after: 0;
   }
   &__block {
-    padding: 25px 20px;
+    padding: 15px 20px;
+    display: flow-root;
     &--full {
       padding: 0px 0px 15px;
     }

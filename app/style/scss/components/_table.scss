@@ -30,8 +30,12 @@ $breakpoint-beta: 1080px;
   &__cell {
     display: block;
     font-weight: normal;
-    padding: 0px 20px;
+    padding: 5px 30px;
+    vertical-align: top;
 
+    @media (min-width: $breakpoint-alpha) {
+      padding: 0px 20px;
+    }
     &:first-child {
       padding-top: 0.5em;
     }
@@ -64,7 +68,7 @@ $breakpoint-beta: 1080px;
 
     @media (min-width: $breakpoint-alpha) {
       display: table-cell;
-      padding: 0.25em 0.5em;
+      padding: 17px 3px;
 
       &:first-child {
         padding-left: 10px;
